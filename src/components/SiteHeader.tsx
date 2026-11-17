@@ -14,7 +14,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Jentley logo" className="h-9 w-auto" />
-          <span className="font-display text-lg tracking-tight">JENTLEY</span>
+          <span className="hidden font-display text-lg tracking-tight sm:inline">JENTLEY</span>
         </Link>
         <nav className="flex gap-1 text-sm sm:gap-2">
           {links.map((l) => (
@@ -22,8 +22,7 @@ export function SiteHeader() {
               key={l.to}
               to={l.to}
               activeOptions={{ exact: true }}
-              className="rounded-sm px-2 py-1.5 text-muted-foreground transition-colors hover:text-foreground sm:px-3"
-              activeProps={{ className: "text-accent" }}
+              className="rounded-sm px-2 py-1.5 text-muted-foreground transition-colors hover:text-foreground data-[status=active]:text-accent sm:px-3"
             >
               {l.label}
             </Link>
