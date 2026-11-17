@@ -19,9 +19,6 @@ const services = [
   { n: "01", title: "Custom Websites", text: "A full website designed and built from scratch around your business and goals." },
   { n: "02", title: "Landing Pages", text: "One focused, high-impact page for a product, event, or launch." },
   { n: "03", title: "Website Redesigns", text: "Give an outdated site a modern, faster, mobile-friendly refresh." },
-  { n: "04", title: "Online Stores", text: "Sell your products online with a clean, easy-to-use shop." },
-  { n: "05", title: "Updates & Care", text: "Ongoing edits, new content, and fixes so your site stays current." },
-  { n: "06", title: "Branding Help", text: "Colors, fonts, and style guidance so everything looks consistent." },
 ];
 
 function Services() {
@@ -29,7 +26,7 @@ function Services() {
     <section className="mx-auto max-w-6xl px-5 py-20">
       <p className="mb-4 text-sm uppercase tracking-[0.3em] text-accent">Services</p>
       <h1 className="max-w-3xl text-4xl sm:text-6xl">What we can build for you.</h1>
-      <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-3">
         {services.map((s) => (
           <div key={s.n} className="group bg-background p-8 transition-colors hover:bg-card">
             <span className="font-display text-sm text-accent">{s.n}</span>
